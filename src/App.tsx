@@ -6,6 +6,9 @@ import help from './assets/help.svg';
 import youtube from './assets/youtube.svg';
 import facebook from './assets/facebook.svg';
 import reddit from './assets/reddit.svg';
+import pause from './assets/pause.svg';
+import swap from './assets/swap.svg';
+import reset from './assets/reset.svg';
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
 
@@ -79,10 +82,6 @@ function App() {
       </div>
 
 
-
-
-
-
       
       <div className='right-panel' style={{ backgroundColor: '#F6F6EF', width: '100%', height: '100%', paddingLeft: '30px', paddingTop: '30px'}}>
         <div style={{display: 'flex', gap: '30px'}}>
@@ -100,10 +99,61 @@ function App() {
             </select>
           </div>
         </div>
-        
+
+        <div style={{display: 'flex', gap: '30px', marginTop: '30px',}}>
+          <button className="ellipse-1" style={{border: 'None'}}>
+            <img src={pause} alt =""/>
+          </button>
+          <div className='bg-timer'>
+            <div className='timer'>1:23 cek.</div>
+          </div>
+        </div>
+
+        <div style={{display: 'flex', gap: '3px', marginTop: '30px',}}>
+          <div style={{fontFamily: 'Inter', fontWeight: '600', fontSize: '13px'}}>
+            <p>Оригинал</p>
+            <select name="lang-select" id="lang-select-id" style={{ width: '545px', height: '55px', marginTop: '2px', backgroundColor: '#E9E9D9', border: 'None', color: 'black', fontFamily: 'Inter', fontWeight: '400', fontSize: '13px', padding: '8px 12px', borderRadius: '10px'}}>
+              <option value='ru'>Russian</option>
+            </select>
+          </div>
+          <img src = {swap} style ={{marginTop: '25px'}}></img>
+          <div style={{fontFamily: 'Inter', fontWeight: '600', fontSize: '13px'}}>
+            <p>Язык перевода</p>
+            <select name="lang-select" id="lang-select-id" style={{ width: '545px', height: '55px', marginTop: '2px', backgroundColor: '#E9E9D9', border: 'None', color: 'black', fontFamily: 'Inter', fontWeight: '400', fontSize: '13px', padding: '8px 12px', borderRadius: '10px'}}>
+              <option value='en'>English</option>
+            </select>
+          </div>
+        </div>
+
+        <div style={{display: 'flex', gap: '30px', marginTop: '10px',}}>
+          <div style ={{width: '540px', height: '432px', borderRadius: '10px', border: '3px dashed #E1E1CB'}}>
+            <p className="translate">В те годы каждый истинный любитель музыки считал за должное выставлять свой магнитофон в окно и делиться своей любимой музыкой со всем белым светом. Поэтому очень о многом можно было узнать, просто проходя по улице. А уж если музыка совсем сбивала с ног, можно было попытаться вычислить – из какой форточки доносятся эти звуки, зайти, позвонить и спросить – а что это у вас играет?
+
+              Истинность этихqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq неизвестных голосов не подлежала сомнению. Поэтому получилось так, что все эти песни, еще даже не всегда известно чьи, были мною впитаны еще до волшебных аккордов Леннона (John Lennon) и Маккартни (Paul McCartney).
+
+              Вдобавок, дома у нас хранились древние – еще на 78 оборотов в минуту – надтреснутые и тяжелые пластинки, оставшиеся от какой-то другой, доисторической жизни, которые моя мама иногда ставила – и в таком они были контрасте с окружающей действительностью, таким иным и потерянным миром веяло от них, что они тоже постепенно заняли свое место в пантеоне прекрасной музыки.
+            </p>
+
+          </div>
+          <div style ={{width: '540px', height: '432px', borderRadius: '10px', border: '3px dashed #E1E1CB'}}>
+            <p className="translate">В те годы каждый истинный любитель музыки считал за должное выставлять свой магнитофон в окно и делиться своей любимой музыкой со всем белым светом. Поэтому очень о многом можно было узнать, просто проходя по улице. А уж если музыка совсем сбивала с ног, можно было попытаться вычислить – из какой форточки доносятся эти звуки, зайти, позвонить и спросить – а что это у вас играет?
+
+              Истинность этих неизвестных голосов не подлежала сомнению. Поэтому получилось так, что все эти песни, еще даже не всегда известно чьи, были мною впитаны еще до волшебных аккордов Леннона (John Lennon) и Маккартни (Paul McCartney).
+
+              Вдобавок, дома у нас хранились древние – еще на 78 оборотов в минуту – надтреснутые и тяжелые пластинки, оставшиеся от какой-то другой, доисторической жизни, которые моя мама иногда ставила – и в таком они были контрасте с окружающей действительностью, таким иным и потерянным миром веяло от них, что они тоже постепенно заняли свое место в пантеоне прекрасной музыки.</p>
+          
+          </div>
+        </div>
+
+        <div style={{display: 'flex', gap: '30px', marginTop: '30px',}}>
+          <button className="save" style={{fontSize: '17px', fontWeight: '600', fontFamily: 'Inter' ,width: '170px', borderRadius: '100px', backgroundColor: '#f5bd7c', color: '#336b6e', border: 'None', height: '54px'}}>
+            Сохранить
+          </button>
+        </div>
       </div>
     </div>
   );
 }
+
 
 export default App;

@@ -5,3 +5,49 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafb);
 }
+
+.ellipse-1 {
+  background: #336b6e;
+  /*border: #336b6e;*/
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  position: relative;
+}
+.bg-timer {
+  background: #336b6e;
+  border-radius: 4px;
+  padding: 4px 8px 4px 8px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  max-width: 396.2px;
+  position: relative;
+}
+
+.timer {
+  color: #ffffff;
+  text-align: left;
+  font: 500 13px "Inter", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.translate {
+  color: #000;
+  font-family: Inter;
+  margin: 21px 66px 33px 12px;
+  width: 462px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
