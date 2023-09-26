@@ -77,6 +77,13 @@ function App() {
         </div>
         
       </div>
+
+
+
+
+
+
+      
       <div className='right-panel' style={{ backgroundColor: '#F6F6EF', width: '100%', height: '100%', paddingLeft: '30px', paddingTop: '30px'}}>
         <div style={{display: 'flex', gap: '30px'}}>
           <div style={{fontFamily: 'Inter', fontWeight: '600', fontSize: '13px'}}>
